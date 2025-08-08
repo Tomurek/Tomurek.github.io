@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Twoje Imię</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="images/avatar.png" alt="Twoje zdjęcie" class="hero-avatar" />
+                <h1>Twoje Imię</h1>
+            </div>
+            <p class="subtitle">Frontend Developer &amp; Web Enthusiast</p>
+            <a href="#projects" class="cta-btn" id="showContentBtn">Poznaj mnie</a>
+        </section>
+
+        <section id="about" class="about section-animate">
+            <h2>O mnie</h2>
+            <p>
+                Jestem pasjonatem programowania, tworzę nowoczesne aplikacje webowe i stale rozwijam swoje umiejętności. 
+                Uwielbiam minimalizm, prostotę i nowoczesne technologie. Zapraszam do zapoznania się z moimi projektami!
+            </p>
+        </section>
+
+        <section id="projects" class="projects section-animate">
+            <h2>Moje projekty</h2>
+            <div class="project-list">
+                <div class="project-card section-animate">
+                    <div class="project-info">
+                        <h3>Portfolio CV</h3>
+                        <p>Rozbudowane portfolio w formie CV, prezentujące moje doświadczenie i umiejętności.</p>
+                        <div class="project-links">
+                            <a href="link-do-projektu-cv" target="_blank" class="btn">Demo</a>
+                            <a href="https://github.com/twoj-github/portfolio-cv" target="_blank" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/portfolio-cv-demo.jpg" alt="Portfolio CV Demo" />
+                    </div>
+                </div>
+                <div class="project-card section-animate">
+                    <div class="project-info">
+                        <h3>Projekt XYZ</h3>
+                        <p>Opis projektu, który realizowałem. Krótka prezentacja funkcjonalności.</p>
+                        <div class="project-links">
+                            <a href="link-do-demo-xyz" target="_blank" class="btn">Demo</a>
+                            <a href="https://github.com/twoj-github/projekt-xyz" target="_blank" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projekt-xyz-demo.jpg" alt="Projekt XYZ Demo" />
+                    </div>
+                </div>
+                <div class="project-card section-animate">
+                    <div class="project-info">
+                        <h3>Gra Ultimate-Tic-Tac-Toe </h3>
+                        <p>Opis projektu, który realizowałem. Krótka prezentacja funkcjonalności.</p>
+                        <div class="project-links">
+                            <a href="link-do-demo-xyz" target="_blank" class="btn">Demo</a>
+                            <a href="https://github.com/twoj-github/projekt-xyz" target="_blank" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/projekt-xyz-demo.jpg" alt="Projekt XYZ Demo" />
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-animate">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Wyślij</button>
+            </form>
+            <p>Możesz też napisać bezpośrednio na: <a href="mailto:twoj.email@gmail.com">twoj.email@gmail.com</a></p>
+        </section>
+    </main>
+        <div class="main-footer">
+        <div class="footer-arrow" id="footerArrow" title="Na górę">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8L16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 16L16 8L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="footer-social">
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" class="footer-icon">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn" class="footer-icon">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" aria-label="GitHub" class="footer-icon">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-author">&copy; 2025 – Strona stworzona przez Twoje Imię</div>
+        <div class="footer-github">
+            <a href="https://github.com/twoj-github/portfolio-cv" target="_blank" class="github-btn">
+                <span>⭐ Star</span> <span class="github-count">13,908</span>
+            </a>
+            
+        </div>
+        </div>
+</body>
+</html>
