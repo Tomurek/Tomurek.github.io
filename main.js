@@ -1,18 +1,18 @@
-    // Scroll to top and reset animations
-    const footerArrow = document.getElementById('footerArrow');
-    if (footerArrow) {
-        footerArrow.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Reset all section animations
-            document.querySelectorAll('.section-animate').forEach(section => {
-                section.classList.remove('visible');
-            });
-            setTimeout(() => {
-                // Re-trigger animations after scroll
-                animateSections();
-            }, 800);
+// Scroll to top and reset animations
+const footerArrow = document.getElementById('footerArrow');
+if (footerArrow) {
+    footerArrow.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Reset all section animations
+        document.querySelectorAll('.section-animate').forEach(section => {
+            section.classList.remove('visible');
         });
-    }
+        setTimeout(() => {
+            // Re-trigger animations after scroll
+            animateSections();
+        }, 800);
+    });
+}
 document.addEventListener('DOMContentLoaded', function () {
     const showContentBtn = document.getElementById('showContentBtn');
     const sections = document.querySelectorAll('.section-animate');
@@ -25,6 +25,29 @@ document.addEventListener('DOMContentLoaded', function () {
         slowScrollTo(aboutSection, 1200);
     });
 
+
+
+    // Fade-in i obrót avataru
+    const heroAvatar = document.querySelector('.hero-avatar');
+        const heroContent = document.querySelector('.hero-content');
+    setTimeout(() => {
+            if(heroAvatar) heroAvatar.classList.add('visible');
+            if(heroContent) heroContent.classList.add('visible');
+    }, 300);
+
+    // Animacja wysyłania formularza kontaktowego
+    const contactForm = document.querySelector('.contact form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            contactForm.style.transition = 'box-shadow 0.5s';
+            contactForm.style.boxShadow = '0 0 32px 0 #43ea7c88';
+            setTimeout(() => {
+                contactForm.style.boxShadow = '';
+                contactForm.reset();
+            }, 1200);
+        });
+    }
     function slowScrollTo(element, duration) {
         const offset = 60;
         const targetY = element.getBoundingClientRect().top + window.pageYOffset - offset;
@@ -71,3 +94,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     animateSections();
 });
+
+
