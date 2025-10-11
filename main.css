@@ -224,30 +224,51 @@ body {
 .footer-arrow:hover {
     color: var(--btn-hover);
 }
-/* Kontakt - Social icons */
 .contact-social {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 2.5rem;
     margin: 2.5rem 0 2rem 0;
+    flex-wrap: nowrap;
 }
+
 .contact-icon {
     color: var(--primary);
     transition: color 0.2s, transform 0.3s;
-    font-size: 4rem;
+    font-size: 2.7rem;
     padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
 }
 .contact-icon:hover {
     color: var(--accent);
     transform: scale(1.18) rotate(-8deg);
-    animation: pulse 0.7s;
 }
 
-@keyframes pulse {
-    0% { filter: brightness(1); }
-    50% { filter: brightness(1.5); }
-    100% { filter: brightness(1); }
+@media (max-width: 900px) {
+    .contact-social {
+        gap: 1.5rem;
+    }
+    .contact-icon {
+        font-size: 2rem;
+    }
 }
+
+@media (max-width: 600px) {
+    .contact-social {
+        gap: 1.2rem;
+        margin: 1.5rem 0 1rem 0;
+        flex-wrap: wrap;
+    }
+    .contact-icon {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.4rem;
+        flex-basis: auto;
+    }
+}
+
 .footer-divider {
     border: none;
     border-top: 1px solid #444;
