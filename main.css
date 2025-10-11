@@ -224,21 +224,25 @@ body {
 .footer-arrow:hover {
     color: var(--btn-hover);
 }
-.footer-social {
+/* Kontakt - Social icons */
+.contact-social {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 1.5rem;
+    gap: 4rem;
+    margin: 2.5rem 0 2rem 0;
 }
-.footer-icon {
+.contact-icon {
     color: var(--primary);
     transition: color 0.2s, transform 0.3s;
+    font-size: 4rem;
+    padding: 0.5rem 1rem;
 }
-.footer-icon:hover {
+.contact-icon:hover {
     color: var(--accent);
-    transform: scale(1.15) rotate(-10deg);
+    transform: scale(1.18) rotate(-8deg);
     animation: pulse 0.7s;
 }
+
 @keyframes pulse {
     0% { filter: brightness(1); }
     50% { filter: brightness(1.5); }
