@@ -32,9 +32,3 @@ main-portfolio-webpage/
 
 - Brak backendu, czysty HTML/CSS/JS.
 - Ikony social: [Font Awesome Pro](https://fontawesome.com/).
-
-## Dostosowanie
-
-- Zmień dane autora, projekty, linki, obrazy w `index.html` i folderze `images`.
-- Edytuj style w `main.css` według własnych preferencji.
-
